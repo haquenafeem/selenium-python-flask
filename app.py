@@ -14,7 +14,7 @@ def setURLMethod():
     content = request.get_json()
     url = content['url']
     global driver
-    driver = webdriver.Chrome("chromedriver.exe")
+    driver = webdriver.Chrome("driver/chromedriver.exe")
     driver.get(url)
     print(url)
     return jsonify({"url":url})
